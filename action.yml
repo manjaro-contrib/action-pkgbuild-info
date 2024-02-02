@@ -13,7 +13,7 @@ runs:
     - name: install some tools
       shell: bash
       run: |
-        pacman -Syy github-cli --noconfirm
+        pacman -Syy github-cli --noconfirm || true
     - id: version
       shell: bash
       run: |
