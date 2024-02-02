@@ -14,7 +14,7 @@ runs:
       shell: bash
       run: |
         if [ $(grep ^ID= /etc/os-release | cut -d'=' -f2) == 'ubuntu' ]; then
-          apt-get update && apt-get install github-cli -y
+          sudo apt-get update && sudo apt-get install github-cli -y
         else
           pacman -Syy github-cli --noconfirm
         fi
