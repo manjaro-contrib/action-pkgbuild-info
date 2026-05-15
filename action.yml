@@ -9,7 +9,7 @@ inputs:
   arm-runs-on:
     description: Builder to use when building on arm
     required: false
-    default: buildjet-2vcpu-ubuntu-2204-arm
+    default: ubuntu-24.04-arm
 
 runs:
   using: "composite"
